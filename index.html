@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <title>Cross Browser Video</title>
-<style type="text/css">
-* { margin:0; padding:0 }
-</style>
 <body>
-<video width="640" height="264" controls poster="<POSTER_FILE>">
+<h1>Cross Browser Video</h1>
+<p>A cross browser video implementation written in pure HTML and CSS that supports all major browsers</p>
+
+<video width="640" height="264" controls poster="http://www.galengrover.com/projects/CrossBrowserVideo/images/poster.png">
 	<source src="videos/video.mp4"  type="video/mp4">
 	<source src="videos/video.ogv"  type="video/ogg">
 
@@ -13,23 +13,9 @@
     <object width="640" height="264" type="application/x-shockwave-flash" data="media/jwplayer.swf">
 		<param name="movie" value="media/jwplayer.swf">
 		<param name="allowfullscreen" value="true">
-		<param name="flashvars" value="controlbar=over&amp;controlbar.idlehide=true&amp;image=<POSTER_FILE>&amp;file=<VIDEO_FILE>">
+		<param name="flashvars" value="controlbar=over&amp;controlbar.idlehide=true&amp;image=http://www.galengrover.com/projects/CrossBrowserVideo/images/poster.png&amp;file=http://www.galengrover.com/projects/CrossBrowserVideo/videos/video.flv">
 	</object>
     
-    <!-- FLV Scrubber
-    <object width="640" height="264" type="application/x-shockwave-flash" data="media/flvscrubber.swf">
-		<param name="movie" value="media/flvscrubber.swf">
-		<param name="allowfullscreen" value="true">
-		<param name="flashvars" value="controlbar=over&amp;previewImage=<POSTER_FILE>&amp;file=<VIDEO_FILE>">
-	</object>-->
-
-	<!-- Flow Player 
-    <object width="640" height="264" type="application/x-shockwave-flash" data="media/flowplayer.swf">
-		<param name="movie" value="media/flowplayer.swf">
-		<param name="allowfullscreen" value="true">
-		<param name="flashvars" value='config={"playlist":["<POSTER_FILE>", {"url": "<VIDEO_FILE>","autoPlay":false,"autoBuffering":true}], "plugins":{"controls":{"url":"flowplayer_controls.swf"}}}'>
-	</object>-->
-
 </video>
 
 </body>
