@@ -1,5 +1,7 @@
 #Cross Browser Video
 
+[Live Example](http://www.galengrover.com/projects/Cross-Browser-Video/)
+
 ##A cross browser video implementation written in pure HTML and CSS that supports the following browsers:
 
  - Firefox 3.5+
